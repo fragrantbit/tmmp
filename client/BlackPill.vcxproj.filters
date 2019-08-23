@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="network\netgame.cpp">
+      <Filter>network</Filter>
+    </ClCompile>
+    <ClCompile Include="d3d\CDirect3D9Hook.cpp">
+      <Filter>d3d</Filter>
+    </ClCompile>
+    <ClCompile Include="hook.cpp" />
+    <ClCompile Include="game\actorped.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="game\body.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="game\entity.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="game\game.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="game\patches.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="game\playerped.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="sdk">
+      <UniqueIdentifier>{95d18955-5ca1-4b33-80b5-f19c0fd42f8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="network">
+      <UniqueIdentifier>{f26bc055-1ac7-480d-9aa1-8cb4fc3d1262}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="d3d">
+      <UniqueIdentifier>{cd14b81b-c74e-438b-8c43-3aa079935df1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game">
+      <UniqueIdentifier>{ee53ad4a-8591-4ccf-b013-ae3be8e5c7ba}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="main.h" />
+    <ClInclude Include="network\netgame.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="network\netcom.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="d3d\CDirect3D9Hook.h">
+      <Filter>d3d</Filter>
+    </ClInclude>
+    <ClInclude Include="hook.h" />
+    <ClInclude Include="game\actorped.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="game\address.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="game\body.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="game\common.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="game\entity.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="game\game.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="game\patches.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="game\playerped.h">
+      <Filter>game</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
