@@ -12,7 +12,11 @@ CBody::CBody(int iTypeOrID)
 {
 	pBody = new newBody;
 
-	if(iTypeOrID == -1)
+	/* Available skins begin from at least 0 identifier, otherwise game's crash is guaranteed. 
+	   It's hard or most likely not possible to make the game be loading a < 0 identifier actor model over the multiplayer net mechanism, 
+	   so it's not sensible to let it happen.
+	*/
+	if(iTypeOrID < 0)
 		iTypeOrID = 0; 
 	
 	pBody->m_fuf = 14335;
