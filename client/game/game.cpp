@@ -44,9 +44,10 @@ void RequestActor_hook(int ident0, int ident1, int ident2)
 {
 	hook_disable(RequestActorFunc,RequestActor_hook);
 
-	// Get actor's base and figure out which model id was assigned to them.
-	// If the identifier is one of these that can be assigned to any actor, 
-	// the actor ped will not be created, but there will be created something else, which is necessary for the game.
+	/* Get actor's base and figure out which model id was assigned to it.
+	   If the identifier is one of these that is to be assigned to any actor, ignore it. 
+	   Otherwise something necessary for the game (like objects) has to be brought on the hook.
+	*/
 	/*_asm {
 		pushad
 		mov eax, dword ptr ds : [dwFParam]
