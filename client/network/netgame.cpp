@@ -72,8 +72,8 @@ void CNet::EntityCreate(librg_event_t * evnt)
 	if(g_bPedExists == FALSE) { 
 		matrix_struct = new matrix_ped;
 
-		// There's an issue--we choose model identifier only when creating a new actor ped
-		// It's good to figure out how to change model identifier when actor was included to the game
+		// Model identifier is set at the time when actorped is about to be spawned
+		// Figure out how to change model identifier for already spawned actorped
 		matrix_struct->model_identifier = 14; /*data_readi32(evnt->data);*/
 		pActor = new CActorPed(matrix_struct->model_identifier);
 
